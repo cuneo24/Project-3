@@ -32,7 +32,6 @@ h2 {
 
 #wrapperCard {
     width: 600px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -58,28 +57,33 @@ em {
     text-align: center;
 }
 
-#miniShield{
+#miniShield {
     height: 8%;
     width: 10%;
 }
 
-#cardHeader1{
+#cardHeader1 {
     font-weight: bold;
     font-size: 36px;
     letter-spacing: 1px;
 }
 
-#cardHeader2{
+#cardHeader2 {
     letter-spacing: 1px;
 }
 
-#cardName{
+#cardName {
     font-family: Arial, sans-serif;
     letter-spacing: 1px;
     font-weight: bold;
 }
 
-#cardPosition{
+#cardPosition {
     font-size: inherit;
     font-style: italic;
+}
+
+#padding {
+    display: block;
+    padding: 2px;
 }

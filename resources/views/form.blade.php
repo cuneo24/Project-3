@@ -155,6 +155,7 @@
             @if(old('omitDepartment') != 'on')
             &emsp;{{old('departmentEmail')}}
             @endif
+            <div id='padding'></div>
         </div>
     @endif
 @endsection
