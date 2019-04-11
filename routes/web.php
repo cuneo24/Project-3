@@ -15,8 +15,4 @@ Route::get('/', function () {
     return view('form');
 });
 
-Route::get('/test', 'CardController@retrieveSessionInfo');
-
 Route::get('/process', 'CardController@process');
-
-Route::get('/pdf', 'CardController@pdfTest');
