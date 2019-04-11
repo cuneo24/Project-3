@@ -16,5 +16,3 @@ Route::get('/', function () {
 });
 
 Route::get('/process', 'CardController@process');
-
-//
