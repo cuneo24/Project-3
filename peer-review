@@ -1,18 +1,23 @@
 ## P3 Peer Review
 
-+ Reviewer's name: 
-+ Reviwee's name: 
-+ URL to Reviewe's P3 Github Repo URL: *<https://github.com/example/p3>*
-
-*Answer the following questions in regards to the student's project you are reviewing. REMOVE THE INSTRUCTIONS FOR EACH PROMPT when complete. We should only see YOUR ANSWERS.*
++ Reviewer's name: Michael Cuneo
++ Reviwee's name: Nathaniel Hunt
++ URL to Reviewee's P3 Github Repo URL: https://github.com/nathanielhunt/p3
 
 ## 1. Interface
 Address as many of the following points as applicable:
 
-+ What are your initial impressions of the site interface?
-+ Were there any parts of the interface that you found confusing, or did not work as you expected?
-+ Were there any parts of the interface that you thought worked notably well?
-+ Do you have any suggestions for improvements on the interface?
++ The interface itself is clean and perfectly simple. Not too much to say about it. It works.
++ The placement of the two boxes to the left seemed an odd choice as they seem fairly far away from the rest of the content.
++ I thought the appearance of the piano was formatted well and actually looked pretty cool, despite me not knowing how to read it. I
+will assume it is accurate.
++ I tried putting junk data (symbols, numbers, and non-note letters) and the validation refused it all. Good work there. I did find a
+problem where if I did in fact put a non-note letter in and the page gave me the error for it, trying to trigger any
+different errors (such as using symbols) afterwards would cause that same previous non-note letter error to stay on screen, unless I produced a different non-note
+letter error.
++ Just to be on the picky side, I believe choosing the root note to be a dropdown would have been more efficient design as 
+there are so few of them to choose from, but it is suitable enough for the requirements of the project itself. Otherwise everything
+worked exactly as I would've expected.
 
 
 ## 2. Functional testing
