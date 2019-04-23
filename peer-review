@@ -5,16 +5,11 @@
 + URL to Reviewee's P3 Github Repo URL: https://github.com/nathanielhunt/p3
 
 ## 1. Interface
-Address as many of the following points as applicable:
 
-+ The interface itself is clean and perfectly simple. Not too much to say about it. It works.
++ My initial impression is that the interface itself is clean and perfectly simple. Not too much to say about it. It works for its purpose.
 + The placement of the two boxes to the left seemed an odd choice as they seem fairly far away from the rest of the content.
 + I thought the appearance of the piano was formatted well and actually looked pretty cool, despite me not knowing how to read it. I
 will assume it is accurate.
-+ I tried putting junk data (symbols, numbers, and non-note letters) and the validation refused it all. Good work there. I did find a
-problem where if I did in fact put a non-note letter in and the page gave me the error for it, trying to trigger any
-different errors (such as using symbols) afterwards would cause that same previous non-note letter error to stay on screen, unless I produced a different non-note
-letter error.
 + Just to be on the picky side, I believe choosing the root note to be a dropdown would have been more efficient design as 
 there are so few of them to choose from, but it is suitable enough for the requirements of the project itself. Otherwise everything
 worked exactly as I would've expected.
@@ -26,16 +21,21 @@ One challenge of developing software is thinking of all the unexpected ways user
 Knowing this, it's time to put your reviewee's application to the test. Think of all the unexpected ways their application could be used with the intention of trying to produce some unexpected/undesirable outcome.
 
 Examples...
-+ Try submitting a form without entering any data
-+ Try submitting a form with entering data in only some of the fields
-+ If an input is asking for a number, try entering some of the following combinations: decimal numbers, negative numbers, letters, symbols, an extremely large number, etc.
-+ Try and access a URL on their site that likely does not exist (e.g. http://a3.domain.com/asdjfks)
-+ Etc.
-
-__Summarize what you tried, and describe any unexpected/undesirable outcomes.__
-
-(Even if you don't find any issues, having the reviewee see what you tried might give them insight into things they did not think to test.)
-
++ I first tried no data in the text field, and as expected, it was required.
++ I tried putting junk data (symbols, numbers, and non-note letters) and the validation refused it all. Good work there.
++ I did find many oddities when trying to enter invalid data into the text field and trying to submit it. I will list my exact steps to
+finding them here:
+- When entering data with no successful attempts prior, the retention of my choices works as expected with no oddities found.
+- When entering data after a successful attempt, I start by entering '!' into the text field. When I submit I receive the appropriate error, but
+when I click again, the root ops field clears itself.
+- When entering data after a successful attempt, I start by entering '7' into the text field. As oppose to the previous attempt
+with '!', the root ops field clears itself immediately.
+- After these two results, I noticed that upon page refresh, memory is retained in a very odd fashion. I tried refreshing the page but it
+did nothing to reset my previous results. I quit the page entirely and came back to three errors, saying that the root note, root ops field,
+and the scale type field are all required. I would expect a new session to be started at this point with auto-populated data with C flat
+as default.
+- I gave up testing after this point as I believe the above mentioned issues are related to how memory is stored and deleted in the 
+application as a whole.
 
 
 ## 3. Code: Routes
