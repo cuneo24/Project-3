@@ -16,11 +16,7 @@ worked exactly as I would've expected.
 
 
 ## 2. Functional testing
-One challenge of developing software is thinking of all the unexpected ways users might interact with our applications. It's easy to develop &ldquo;blinders&rdquo; to methods of interaction because we know so much about *how* our application works, and so we have a hard time imagining how our interfaces might be misinterpreted. Thus, it can be useful to have an outsider rigorously test our applications with the explicit intention of trying to break it.
 
-Knowing this, it's time to put your reviewee's application to the test. Think of all the unexpected ways their application could be used with the intention of trying to produce some unexpected/undesirable outcome.
-
-Examples...
 + I first tried no data in the text field, and as expected, it was required.
 + I tried putting junk data (symbols, numbers, and non-note letters) and the validation refused it all. Good work there.
 + I did find many oddities when trying to enter invalid data into the text field and trying to submit it. I will list my exact steps to
