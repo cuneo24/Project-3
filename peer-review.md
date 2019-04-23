@@ -26,20 +26,13 @@ finding them here:
 when I click again, the root ops field clears itself.
     + When entering data after a successful attempt, I start by entering '7' into the text field. As oppose to the previous attempt
 with '!', the root ops field clears itself immediately.
-    + After these two results, I noticed that upon page refresh, memory is retained in a very odd fashion. I tried refreshing the page but it
-did nothing to reset my previous results. I quit the page entirely and came back to three errors, saying that the root note, root ops field,
-and the scale type field are all required. I would expect a new session to be started at this point with auto-populated data with C flat
-as default.
+    + After these two results, I noticed that upon page refresh, memory is being retained in a very odd fashion. I quit the page entirely and came back to three errors, saying that the root note, root ops field, and the scale type field are all required. I would expect a new session to be started at this point with auto-populated data with C flat as default.
 + I gave up testing after this point as I believe the above mentioned issues are related to how memory is stored and deleted in the 
 application as a whole.
 
 
 ## 3. Code: Routes
-Skim through the student's code on Github.
-
-Find their routes file (`routes/web.php`). Thinking about ideal Route/Controller organization&mdash; is there any code in this file that should be happening in a Controller?
-
-If yes, describe.
++ The routes used in this application have been utilized correctly. There is no code that does not belong.
 
 ## 4. Code: Views
 Skim through the View files in `/resources/views` and address as many of the following points as applicable:
