@@ -35,10 +35,8 @@ application as a whole.
 + The routes used in this application have been utilized correctly. There is no code that does not belong.
 
 ## 4. Code: Views
-Skim through the View files in `/resources/views` and address as many of the following points as applicable:
-
-+ Is template inheritance used?
-+ Are there any separation of concern issues (i.e. non-display specific logic in view files)?
++ Template inheritance is present
++ I am seeing the use of @php a lot in the view and it appears to be code that could have been executed from the controller
 + Did they do anything in PHP that could have been done in Blade?
 + Did they use any Blade syntax/techniques you were unfamiliar with?
 
