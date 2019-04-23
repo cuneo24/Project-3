@@ -25,16 +25,16 @@ Examples...
 + I tried putting junk data (symbols, numbers, and non-note letters) and the validation refused it all. Good work there.
 + I did find many oddities when trying to enter invalid data into the text field and trying to submit it. I will list my exact steps to
 finding them here:
-- When entering data with no successful attempts prior, the retention of my choices works as expected with no oddities found.
-- When entering data after a successful attempt, I start by entering '!' into the text field. When I submit I receive the appropriate error, but
+    + When entering data with no successful attempts prior, the retention of my choices works as expected with no oddities found.
+    + When entering data after a successful attempt, I start by entering '!' into the text field. When I submit I receive the       appropriate error, but
 when I click again, the root ops field clears itself.
-- When entering data after a successful attempt, I start by entering '7' into the text field. As oppose to the previous attempt
+    + When entering data after a successful attempt, I start by entering '7' into the text field. As oppose to the previous attempt
 with '!', the root ops field clears itself immediately.
-- After these two results, I noticed that upon page refresh, memory is retained in a very odd fashion. I tried refreshing the page but it
+    + After these two results, I noticed that upon page refresh, memory is retained in a very odd fashion. I tried refreshing the page but it
 did nothing to reset my previous results. I quit the page entirely and came back to three errors, saying that the root note, root ops field,
 and the scale type field are all required. I would expect a new session to be started at this point with auto-populated data with C flat
 as default.
-- I gave up testing after this point as I believe the above mentioned issues are related to how memory is stored and deleted in the 
+    + I gave up testing after this point as I believe the above mentioned issues are related to how memory is stored and deleted in the 
 application as a whole.
 
 
