@@ -38,7 +38,7 @@ application as a whole.
 + Template inheritance is present
 + I am seeing the use of @php a lot in the view and it appears to be code that could have been executed from the controller
 + Did they do anything in PHP that could have been done in Blade?
-+ Did they use any Blade syntax/techniques you were unfamiliar with?
++ I see no techniques I am unfamiliar with
 
 ## 5. Code: General
 Address as many of the following points as applicable:
