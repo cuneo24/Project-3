@@ -34,7 +34,7 @@ with '!', the root ops field clears itself immediately.
 did nothing to reset my previous results. I quit the page entirely and came back to three errors, saying that the root note, root ops field,
 and the scale type field are all required. I would expect a new session to be started at this point with auto-populated data with C flat
 as default.
-    + I gave up testing after this point as I believe the above mentioned issues are related to how memory is stored and deleted in the 
++ I gave up testing after this point as I believe the above mentioned issues are related to how memory is stored and deleted in the 
 application as a whole.
 
 
