@@ -36,16 +36,27 @@ application as a whole.
 
 ## 4. Code: Views
 + Template inheritance is present
-+ I am seeing the use of @php a lot in the view and it appears to be code that could have been executed from the controller
++ I am seeing the use of @php a few times in the view, but it simply appears to be small convenience code, and nothing major
 + I see no techniques I am unfamiliar with
++ For the 'root_ops' radio buttons, the conditionals for setting 'checked' are different:
+''html
+ <input type="radio" name="root_opts" value="nat"
+                {{ (old('root_opts') != 'nat' || $inputs['root_opts'] != 'nat') ? 'checked' : '' }}
+            >♮
+            <input type="radio" name="root_opts" value="sharp"
+                {{ (old('root_opts') == 'sharp' || $inputs['root_opts'] == 'sharp') ? 'checked' : ''  }}
+            >♯
+            <input type="radio" name="root_opts" value="flat"
+                {{ (old('root_opts') == 'flat' || $inputs['root_opts'] == 'flat') ? 'checked' : ''  }}
+             >♭@include('snippets.req')
+''
 
 ## 5. Code: General
 Address as many of the following points as applicable:
 
 + I found following the controller rather difficult without comments as there are a large number of similarly named variables
-being used and referenced throughout
-+ Do you notice any inconsistencies between the code and the course notes on [code style](https://github.com/susanBuck/dwa15-fall2018/blob/master/misc/code-style.md)?
-+ Are there any best practices discussed in course material that you feel were not addressed in the code?
+being used and referenced throughout - the ones that were present did not help very much to aid in my understanding
++ In the controller, variables are not named using camel case, but instead by using underscores, ie. 'twelve_tones', 'black_keys', and 'maj_scale_pattern'
 + Are there any parts of the code that you found interesting/would not have thought to do yourself?
 + Are there any parts of the code that you don't understand?
 
