@@ -39,7 +39,7 @@ application as a whole.
 + I am seeing the use of @php a few times in the view, but it simply appears to be small convenience code, and nothing major
 + I see no techniques I am unfamiliar with
 + For the 'root_ops' radio buttons, the conditionals for setting 'checked' are different:
-``html
+```html
  <input type="radio" name="root_opts" value="nat"
                 {{ (old('root_opts') != 'nat' || $inputs['root_opts'] != 'nat') ? 'checked' : '' }}
             >♮
@@ -49,7 +49,7 @@ application as a whole.
             <input type="radio" name="root_opts" value="flat"
                 {{ (old('root_opts') == 'flat' || $inputs['root_opts'] == 'flat') ? 'checked' : ''  }}
              >♭@include('snippets.req')
-``
+```
 
 ## 5. Code: General
 Address as many of the following points as applicable:
