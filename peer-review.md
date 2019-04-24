@@ -76,6 +76,8 @@ Address as many of the following points as applicable:
 + I found following the controller and some parts of the view rather difficult without comments as there are a large number of 
 similarly named variables being used and referenced throughout - the ones that were present did not help very much to aid in my understanding.
 + In the controller, variables are not named using camel case, but instead by using underscores, ie. 'twelve_tones', 'black_keys', and 'maj_scale_pattern'.
++ Overall I am pretty impressed with this project. On the surface it looks fairly simple but there is a lot going on under the hood to
+appreciate.
 
 ## 6. Misc
 N/A
