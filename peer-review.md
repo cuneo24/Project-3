@@ -74,8 +74,8 @@ root_error, from viewing the controller, seems to populate and trigger when the 
 Address as many of the following points as applicable:
 
 + I found following the controller and some parts of the view rather difficult without comments as there are a large number of 
-similarly named variables being used and referenced throughout - the ones that were present did not help very much to aid in my understanding
-+ In the controller, variables are not named using camel case, but instead by using underscores, ie. 'twelve_tones', 'black_keys', and 'maj_scale_pattern'
+similarly named variables being used and referenced throughout - the ones that were present did not help very much to aid in my understanding.
++ In the controller, variables are not named using camel case, but instead by using underscores, ie. 'twelve_tones', 'black_keys', and 'maj_scale_pattern'.
 
 ## 6. Misc
 N/A
