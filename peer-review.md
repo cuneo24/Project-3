@@ -37,7 +37,7 @@ presented
 + Template inheritance is present
 + I am seeing the use of @php a few times in the view, but it simply appears to be small convenience code, and nothing major
 + I see no techniques I am unfamiliar with
-+ For the 'root_ops' radio buttons, the conditionals for setting 'checked' are different:
++ For the 'root_ops' radio buttons, the conditionals for setting 'checked' are different, perhaps contributing to the radio button toggle issue previously mentioned:
 ```html
  <input type="radio" name="root_opts" value="nat"
                 {{ (old('root_opts') != 'nat' || $inputs['root_opts'] != 'nat') ? 'checked' : '' }}
@@ -66,7 +66,7 @@ presented
                 <br>
             @endif
 ```
-root_error, from viewing the controller, seems to populate and trigger when the letter entered is not a musical note. The application retains the data in root_error, and when trying to trigger the non-letter error by entering an '!' after root_error is triggered in the same session, the conditional will always choose to display the non-note letter error triggered by root_error being populated first unless the new submission directly overwrites it. Perhaps a way to remedy this issue would have been check if root_error was set *and* if it matched the previous input entered.
+root_error, from viewing the controller, seems to populate and trigger when the letter entered is not a musical note. The application retains the data in root_error, and when trying to trigger the non-letter error by entering an '!' after root_error is triggered in the same session, the conditional will always choose to display the non-note letter error triggered by root_error being populated first unless the new submission directly overwrites it. Perhaps a way to remedy this issue would have been to check if root_error was set *and* if it matched the previous input entered.
 
 
 ## 5. Code: General
