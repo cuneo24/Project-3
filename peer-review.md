@@ -37,17 +37,17 @@ application as a whole.
 ## 4. Code: Views
 + Template inheritance is present
 + I am seeing the use of @php a lot in the view and it appears to be code that could have been executed from the controller
-+ Did they do anything in PHP that could have been done in Blade?
 + I see no techniques I am unfamiliar with
 
 ## 5. Code: General
 Address as many of the following points as applicable:
 
++ I found following the controller rather difficult without comments as there are a large number of similarly named variables
+being used
 + Do you notice any inconsistencies between the code and the course notes on [code style](https://github.com/susanBuck/dwa15-fall2018/blob/master/misc/code-style.md)?
 + Are there any best practices discussed in course material that you feel were not addressed in the code?
-+ Are there aspects of the code that you feel were not self-evident and would benefit from comments?
 + Are there any parts of the code that you found interesting/would not have thought to do yourself?
 + Are there any parts of the code that you don't understand?
 
 ## 6. Misc
-Do you have any additional comments not covered in the above questions?
+N/A
