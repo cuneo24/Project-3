@@ -43,7 +43,7 @@ application as a whole.
 Address as many of the following points as applicable:
 
 + I found following the controller rather difficult without comments as there are a large number of similarly named variables
-being used
+being used and referenced throughout
 + Do you notice any inconsistencies between the code and the course notes on [code style](https://github.com/susanBuck/dwa15-fall2018/blob/master/misc/code-style.md)?
 + Are there any best practices discussed in course material that you feel were not addressed in the code?
 + Are there any parts of the code that you found interesting/would not have thought to do yourself?
