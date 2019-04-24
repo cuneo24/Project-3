@@ -24,9 +24,9 @@ finding them here:
     + When entering data with no successful attempts prior, the retention of my choices works as expected with no oddities found.
     + When entering data after a successful attempt, I start by entering '!' into the text field. When I submit I receive the       appropriate error, but when I click again, the root ops field clears itself.
     + When entering data after a successful attempt, I start by entering '7' into the text field. I get the same results as before when
-    entering '!'. Continuing to just click submit toggles the root ops being checked and unchecked
+    entering '!'. Continuing to just click submit toggles the root ops being checked and unchecked.
     + When entering a letter but not one that is valid, I receive the appropriate error message saying that, for instance, 'Z' is not a valid note. When trying to trigger a different error at this point, such as entering an '!', validation does not update the error list until the submission is valid or another improper letter is entered.
-+ I finished testing after this point as I believe there is something wrong with how some information is stored and how some errors are
++ I finished testing after this point as I believe there is something wrong with how some information and how some errors are
 presented
 
 
