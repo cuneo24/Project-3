@@ -22,13 +22,12 @@ worked exactly as I would've expected.
 + I did find many oddities when trying to enter invalid data into the text field and trying to submit it. I will list my exact steps to
 finding them here:
     + When entering data with no successful attempts prior, the retention of my choices works as expected with no oddities found.
-    + When entering data after a successful attempt, I start by entering '!' into the text field. When I submit I receive the       appropriate error, but
-when I click again, the root ops field clears itself.
-    + When entering data after a successful attempt, I start by entering '7' into the text field. As oppose to the previous attempt
-with '!', the root ops field clears itself immediately.
-    + After these two results, I noticed that upon page refresh, memory is being retained in a very odd fashion. I quit the page entirely and came back to three errors, saying that the root note, root ops field, and the scale type field are all required. I would expect a new session to be started at this point with auto-populated data with C flat as default.
-+ I gave up testing after this point as I believe the above mentioned issues are related to how memory is stored and deleted in the 
-application as a whole.
+    + When entering data after a successful attempt, I start by entering '!' into the text field. When I submit I receive the       appropriate error, but when I click again, the root ops field clears itself.
+    + When entering data after a successful attempt, I start by entering '7' into the text field. I get the same results as before when
+    entering '!'. Continuing to just click submit toggles the root ops being checked and unchecked
+    + When entering a letter but not one that is valid, I receive the appropriate error message saying that, for instance, 'Z' is not a valid note. When trying to trigger a different error at this point, such as entering an '!', validation does not update the error list until the submission is valid or another improper letter is entered.
++ I finished testing after this point as I believe there is something wrong with how some information is stored and how some errors are
+presented
 
 
 ## 3. Code: Routes
@@ -50,15 +49,32 @@ application as a whole.
                 {{ (old('root_opts') == 'flat' || $inputs['root_opts'] == 'flat') ? 'checked' : ''  }}
              >♭@include('snippets.req')
 ```
++ Inconsistent naming conventions used throughout - some names use camel case, some use underscores
++ I found the potentional problem code in reference to the issue of the error list not being updated properly:
+```html
+ @if (isset($root_error))
+                <ul id="errors-list">
+                    <li class="errors">{{ $root_error }}</li>
+                </ul>
+                <br>
+            @elseif(count($errors) > 0)
+                <ul id="errors-list">
+                    @foreach ($errors->all() as $error)
+                        <li class="errors">{{ $error }}</li>
+                    @endforeach
+                </ul>
+                <br>
+            @endif
+```
+root_error, from viewing the controller, seems to populate and trigger when the letter entered is not a musical note. The application retains the data in root_error, and when trying to trigger the non-letter error by entering an '!' after root_error is triggered in the same session, the conditional will always choose to display the non-note letter error triggered by root_error being populated first unless the new submission directly overwrites it. Perhaps a way to remedy this issue would have been check if root_error was set *and* if it matched the previous input entered.
+
 
 ## 5. Code: General
 Address as many of the following points as applicable:
 
-+ I found following the controller rather difficult without comments as there are a large number of similarly named variables
-being used and referenced throughout - the ones that were present did not help very much to aid in my understanding
++ I found following the controller and some parts of the view rather difficult without comments as there are a large number of 
+similarly named variables being used and referenced throughout - the ones that were present did not help very much to aid in my understanding
 + In the controller, variables are not named using camel case, but instead by using underscores, ie. 'twelve_tones', 'black_keys', and 'maj_scale_pattern'
-+ Are there any parts of the code that you found interesting/would not have thought to do yourself?
-+ Are there any parts of the code that you don't understand?
 
 ## 6. Misc
 N/A
