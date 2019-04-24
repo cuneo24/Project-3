@@ -49,6 +49,7 @@ presented
                 {{ (old('root_opts') == 'flat' || $inputs['root_opts'] == 'flat') ? 'checked' : ''  }}
              >♭@include('snippets.req')
 ```
+Notice the first radio button uses '!=' as oppose to '==' like the other two.
 + Inconsistent naming conventions used throughout - some names use camel case, some use underscores
 + I found the potentional problem code in reference to the issue of the error list not being updated properly:
 ```html
